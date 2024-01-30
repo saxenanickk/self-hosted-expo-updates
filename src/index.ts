@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
-import assetsRoute from "./assets";
-import manifestRoute from "./manifest";
+import assetsRoute from "./routes/assets";
+import manifestRoute from "./routes/manifest";
 
 dotenv.config();
 

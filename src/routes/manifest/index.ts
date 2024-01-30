@@ -13,7 +13,7 @@ import {
   getMetadataAsync,
   getPrivateKeyAsync,
   signRSASHA256,
-} from "../common/helpers";
+} from "../../common/helpers";
 import { serializeDictionary } from "structured-headers";
 
 const manifestRoute = express.Router();

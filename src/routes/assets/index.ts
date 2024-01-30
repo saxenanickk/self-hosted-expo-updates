@@ -6,7 +6,7 @@ import express, { Request, Response } from "express";
 import {
   getLatestUpdateBundlePathForRuntimeVersionAsync,
   getMetadataAsync,
-} from "../common/helpers";
+} from "../../common/helpers";
 
 const assetsRoute = express.Router();
 
