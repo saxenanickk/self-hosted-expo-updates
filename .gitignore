@@ -23,6 +23,9 @@ web_modules/
 # Optional eslint cache
 .eslintcache
 
+# Build directory
+dist/
+
 # yarn v2
 .yarn/cache
 .yarn/unplugged
