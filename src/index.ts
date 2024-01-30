@@ -12,8 +12,8 @@ app.get("/", (req: Request, res: Response) => {
   res.send("<h1>OTA Updates Service is up and running.</h1>");
 });
 
-app.use("/manifest", manifestRoute);
-app.use("/assets", assetsRoute);
+app.use("/api/manifest", manifestRoute);
+app.use("/api/assets", assetsRoute);
 
 app.listen(port, () => {
   console.log(`[server]: Server is running at http://localhost:${port}`);

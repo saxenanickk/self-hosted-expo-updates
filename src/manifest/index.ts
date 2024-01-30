@@ -99,8 +99,6 @@ const manifestEndpoint = async (req: Request, res: Response) => {
     res.statusCode = 404;
     res.json({ error });
   }
-
-  res.json({ name: "Nikhil" });
 };
 
 manifestRoute.get("/", manifestEndpoint);
