@@ -1,5 +1,5 @@
 {
-  "name": "app-updates-service",
+  "name": "self-hosted-expo-updates",
   "version": "1.0.0",
   "main": "src/index.ts",
   "license": "MIT",
