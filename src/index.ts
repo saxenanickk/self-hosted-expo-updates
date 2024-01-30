@@ -1,5 +1,6 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
+import assetsRoute from "./assets";
 import manifestRoute from "./manifest";
 
 dotenv.config();
@@ -12,6 +13,7 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.use("/manifest", manifestRoute);
+app.use("/assets", assetsRoute);
 
 app.listen(port, () => {
   console.log(`[server]: Server is running at http://localhost:${port}`);

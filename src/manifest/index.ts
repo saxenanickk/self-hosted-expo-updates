@@ -18,7 +18,7 @@ import { serializeDictionary } from "structured-headers";
 
 const manifestRoute = express.Router();
 
-manifestRoute.get("/", async (req: Request, res: Response) => {
+const manifestEndpoint = async (req: Request, res: Response) => {
   if (req.method !== "GET") {
     res.statusCode = 405;
     res.json({ error: "Expected GET." });
@@ -101,7 +101,9 @@ manifestRoute.get("/", async (req: Request, res: Response) => {
   }
 
   res.json({ name: "Nikhil" });
-});
+};
+
+manifestRoute.get("/", manifestEndpoint);
 
 enum UpdateType {
   NORMAL_UPDATE,
